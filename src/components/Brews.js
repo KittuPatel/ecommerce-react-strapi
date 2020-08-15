@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import Strapi from 'strapi-sdk-javascript/build/main'
 import { Link } from 'react-router-dom';
 import { Box, Card, Image, Button, Icon, Spinner, Mask, IconButton } from 'gestalt'
-const apiUrl = process.env.API_URL || 'http://localhost:1337'
+const apiUrl = process.env.API_URL || 'https://obscure-tor-60047.herokuapp.com'
 const strapi = new Strapi(apiUrl)
 
 class Brews extends Component {

@@ -5,7 +5,7 @@ import {Elements, StripeProvider, CardElement, injectStripe} from 'react-stripe-
 import { calculateAmount, clearCart } from '../utils'
 import {withRouter} from 'react-router-dom'
 import Strapi from 'strapi-sdk-javascript/build/main'
-const apiUrl = process.env.API_URL || 'http://localhost:1337'
+const apiUrl = process.env.API_URL || 'https://obscure-tor-60047.herokuapp.com'
 const strapi = new Strapi(apiUrl)
 
 class _CheckoutForm extends Component {
